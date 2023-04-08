@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+* {
+    font-family: 'Rubik', sans-serif;
+    transition: 0.2s linear;
+}
+
+body {
+    overflow: hidden;
+    background-color: rgb(136, 208, 218); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    background-color: aliceblue;
+    width: 500px;
+    min-height: 58vh;
+
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0 , 0, 0, 0.15);
+    animation-name: animation-in;
+    animation-duration: 1s;
+}
+
+@keyframes animation-in {
+    from {margin-top: 1400px;}
+    to {margin-top: none;}
+} 
+
+header {
+    height: 100px;
+    padding: 10px ;
+}
+
+
+li {
+    list-style-type: none;
+    margin: 50px 0 50px 0;
+    font-size: 30px;
+}
+
+li:first-child {
+    margin: 0;
+}
+
+li:last-child {
+    min-height: 13vh;
+    margin-bottom: 2vh;
+}
+
+li a {
+    padding:10px;
+    display: block;
+    color: black;
+    width: fit-content;
+}
+
+    a:hover {
+        background-color: rgba(0, 0, 0, 0.158);
+        border-radius: 10px;
+    }
+
+#active {
+    background-color: rgb(10, 199, 10);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 200px;
+}
+
+    #active:hover {
+        background-color: rgb(11, 170, 11);
+    }
+
+
+footer a {
+    color: black;
+}
