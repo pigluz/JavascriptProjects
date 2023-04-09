@@ -28,13 +28,59 @@
             </nav>
         </div>
 
-   
+        <div id="event-container">
 
-    <footer>
-        <p>Made by <a href="https://github.com/pigluz">pigluz</a></p>
-    </footer>
-</center>
-<script src="https://pigluz.github.io/JavascriptProjects/timer/timer.js"></script>
+            <table>
+                <tr>
+                    <td><label for="yearDate"> Year:</td>
+                    <td><input type="number" min="2023" max="2099" id="yearDate"></label></td>
+                </tr>
+                <tr>
+                    <td><label for="selectMonth"> Month: </td>
+                    <td> <select id="selectMonth">
+                            <option value="Jan">January</option>
+                            <option value="Feb">February</option>
+                            <option value="Mar">March</option>
+                            <option value="Apr">April</option>
+                            <option value="May">May</option>
+                            <option value="Jun">June</option>
+                            <option value="Jul">July</option>
+                            <option value="Aug">August</option>
+                            <option value="Sep">September</option>
+                            <option value="Oct">October</option>
+                            <option value="Nov">November</option>
+                            <option value="Dec">December</option>
+                        </select></label></td>
+                </tr>
+                <tr>
+                    <td><label for="dayDate"> Day:</td>
+                    <td><input type="number" min="1" max="31" id="dayDate"></label></td>
+                </tr>
+                <tr>
+                    <td><label for="hourDate"> Hour: </td>
+                    <td><input type="number" min="0" max="24" id="hourDate"></label></td>
+                </tr>
+                <tr>
+                    <td><label for="minuteDate"> Minute:</td>
+                    <td><input type="number" min="0" max="60" id="minuteDate"></label></td>
+                </tr>
+                <tr>
+                    <td><label for="secondDate"> Second: </td>
+                    <td><input type="number" min="0" max="60" id="secondDate"></label></td>
+                </tr>
+            </table>
+            <button id="submitTimer" onclick="setTimer()">Submit</button>
+
+            <p id="timerText"></p>
+
+        </div>
+
+
+        <footer>
+            <p>Made by <a href="https://github.com/pigluz">pigluz</a></p>
+        </footer>
+    </center>
+    <script src="https://pigluz.github.io/JavascriptProjects/timer/timer.js"></script>
 </body>
 
 </html>
