@@ -32,6 +32,8 @@ body {
   font-size: 30px;
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  animation-name: animation-in;
+  animation-duration: 1.5s;
 }
 
 #container li {
@@ -75,6 +77,8 @@ a:hover {
   font-size: 20px;
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  animation-name: animation-in;
+  animation-duration: 0.5s;
 }
 
 #event-container table {
@@ -118,6 +122,20 @@ input:focus {
   color: rgb(121, 71, 71) !important;
 }
 
+footer {
+  position: relative;
+  bottom:35px
+}
+
 footer a {
   color: black;
+}
+
+@keyframes animation-in {
+  from {
+    margin-top: -1000px;
+  }
+  to {
+    margin-top: 0;
+  }
 }
