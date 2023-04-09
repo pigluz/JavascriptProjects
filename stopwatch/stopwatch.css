@@ -16,7 +16,8 @@ body {
 
 #container {
   padding: 10px;
-  width: 45vw;
+  min-width: 300px;
+  max-width: 40vw;
   background-color: aliceblue;
   list-style-type: none;
   margin: 50px 0 50px 0;
@@ -62,9 +63,9 @@ a:hover {
 #event-container {
   min-height: 30vh;
   position: relative;
-  width: 45vw;
   padding: 10px;
-  width: 45vw;
+  min-width: 30vw;
+  width: 300px;
   background-color: aliceblue;
   font-size: 50px;
   border-radius: 10px;
