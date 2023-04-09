@@ -1,5 +1,4 @@
 window.onload = function () {
-
   // Default values...
   var minutes = 00;
   var seconds = 00;

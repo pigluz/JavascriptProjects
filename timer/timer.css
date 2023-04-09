@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 
 /* ukryj dzyndzelek spinner */
 input[type="number"]::-webkit-outer-spin-button,
@@ -6,118 +6,118 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
- 
+
 /* usun odstepy miedzy inputem a pseudo-elementami */
 input[type="number"] {
   -moz-appearance: textfield;
 }
 
 * {
-    font-family: 'Rubik', sans-serif;
-    transition: 0.2s linear;
+  font-family: "Rubik", sans-serif;
+  transition: 0.2s linear;
 }
 
 body {
-    overflow: hidden;
-    background-color: rgb(136, 208, 218); 
-    min-height: 100vh;
+  overflow: hidden;
+  background-color: rgb(136, 208, 218);
+  min-height: 100vh;
 }
 
 #container {
-    padding: 10px;
-    width: 45vw;
-    background-color: aliceblue;
-    list-style-type: none;
-    margin: 50px 0 50px 0;
-    font-size: 30px;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0 , 0, 0, 0.15);
+  padding: 10px;
+  width: 45vw;
+  background-color: aliceblue;
+  list-style-type: none;
+  margin: 50px 0 50px 0;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
 #container li {
-    display: inline;
+  display: inline;
 }
 
 #container a {
-    color: black;
-    padding: 0 1vw 0 1vw;
+  color: black;
+  padding: 0 1vw 0 1vw;
 }
 
 li a {
-    padding: 15px;
-    color: black;
-    width: fit-content;
+  padding: 15px;
+  color: black;
+  width: fit-content;
 }
 
-    a:hover {
-        background-color: rgba(0, 0, 0, 0.158);
-        border-radius: 10px;
-    }
+a:hover {
+  background-color: rgba(0, 0, 0, 0.158);
+  border-radius: 10px;
+}
 
 #active {
-    background-color: rgb(10, 199, 10);
-    border-radius: 5px;
-    color: white !important;
-    padding: 10px;
-    width: 200px;
+  background-color: rgb(10, 199, 10);
+  border-radius: 5px;
+  color: white !important;
+  padding: 10px;
+  width: 200px;
 }
 
-    #active:hover {
-        background-color: rgb(11, 170, 11);
-    }
+#active:hover {
+  background-color: rgb(11, 170, 11);
+}
 
 #event-container {
-    height: 520px;
-    padding: 10px;
-    width: 25vw;
-    background-color: aliceblue;
-    margin: 50px 0 50px 0;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0 , 0, 0, 0.15);
+  height: 520px;
+  padding: 10px;
+  width: 25vw;
+  background-color: aliceblue;
+  margin: 50px 0 50px 0;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
 #event-container table {
-    margin: 30px 0 10px 0;
+  margin: 30px 0 10px 0;
 }
 
 #event-container td {
-    padding: 10px 0 20px 0
+  padding: 10px 0 20px 0;
 }
 
-#event-container input, select {
-    background-color: white;
-    padding: 5px 0 5px 0;
-    text-align: center;
-    width: 100px;
-    border: 3px solid rgb(228, 240, 238);
-    border-radius: 15px;
-    outline: black;
+#event-container input,
+select {
+  background-color: white;
+  padding: 5px 0 5px 0;
+  text-align: center;
+  width: 100px;
+  border: 3px solid rgb(228, 240, 238);
+  border-radius: 15px;
+  outline: black;
 }
 
-#event-container select:hover, select:focus {
-    background-color: rgb(229, 241, 240);
+#event-container select:hover,
+select:focus {
+  background-color: rgb(229, 241, 240);
 }
 
-#event-container input:hover, input:focus {
-    background-color: rgb(229, 241, 240);
+#event-container input:hover,
+input:focus {
+  background-color: rgb(229, 241, 240);
 }
-
-
 
 #event-container button {
-    padding: 10px 25px 10px 25px;
-    cursor: pointer;
-    border-radius: 10px;
-    border: none;
-    font-size: 20px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
 }
 
 #timerTeext {
-    color: rgb(121, 71, 71) !important;
+  color: rgb(121, 71, 71) !important;
 }
 
 footer a {
-    color: black;
+  color: black;
 }
-    

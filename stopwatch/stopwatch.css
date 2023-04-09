@@ -27,7 +27,6 @@ body {
   animation-duration: 1.5s;
 }
 
-
 #container li {
   display: inline;
 }
@@ -95,8 +94,11 @@ footer a {
   color: black;
 }
 
-
 @keyframes animation-in {
-  from {margin-top: -1000px;}
-  to {margin-top: 0;}
-} 
+  from {
+    margin-top: -1000px;
+  }
+  to {
+    margin-top: 0;
+  }
+}
