@@ -1,60 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 
 * {
-    font-family: 'Rubik', sans-serif;
-    transition: 0.2s linear;
+  font-family: "Rubik", sans-serif;
+  transition: 0.2s linear;
 }
 
 body {
-    overflow: hidden;
-    background-color: rgb(136, 208, 218); 
-    min-height: 100vh;
+  overflow: hidden;
+  background-color: rgb(136, 208, 218);
+  min-height: 100vh;
 }
 
 #container {
-    padding: 10px;
-    width: 45vw;
-    background-color: aliceblue;
-    list-style-type: none;
-    margin: 50px 0 50px 0;
-    font-size: 30px;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0 , 0, 0, 0.15);
+  padding: 10px;
+  width: 45vw;
+  background-color: aliceblue;
+  list-style-type: none;
+  margin: 50px 0 50px 0;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
 }
 
 #container li {
-    display: inline;
+  display: inline;
 }
 
 #container a {
-    color: black;
-    padding: 0 1vw 0 1vw;
+  color: black;
+  padding: 0 1vw 0 1vw;
 }
 
 li a {
-    padding: 15px;
-    color: black;
-    width: fit-content;
+  padding: 15px;
+  color: black;
+  width: fit-content;
 }
 
-    a:hover {
-        background-color: rgba(0, 0, 0, 0.158);
-        border-radius: 10px;
-    }
+a:hover {
+  background-color: rgba(0, 0, 0, 0.158);
+  border-radius: 10px;
+}
 
 #active {
-    background-color: rgb(10, 199, 10);
-    border-radius: 5px;
-    color: white !important;
-    padding: 10px;
-    width: 200px;
+  background-color: rgb(10, 199, 10);
+  border-radius: 5px;
+  color: white !important;
+  padding: 10px;
+  width: 200px;
 }
 
-    #active:hover {
-        background-color: rgb(11, 170, 11);
-    }
+#active:hover {
+  background-color: rgb(11, 170, 11);
+}
+
+#event-container {
+  min-height: 30vh;
+  position: relative;
+  width: 45vw;
+  padding: 10px;
+  width: 45vw;
+  background-color: aliceblue;
+  font-size: 50px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+#event-container button {
+  margin: 0 10px 15px 10px;
+  padding: 10px 20px;
+  font-size: 25px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(216, 229, 238);
+  cursor: pointer;
+}
+
+#event-container button:hover,
+button:focus {
+  background-color: rgb(191, 203, 211);
+  padding: 11px 21px;
+  margin: -1 9px 14px 9px;
+}
 
 footer a {
-    color: black;
+  color: black;
 }
-    
