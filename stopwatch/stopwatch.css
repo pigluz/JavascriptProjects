@@ -24,13 +24,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
   animation-name: animation-in;
-  animation-duration: 1s;
+  animation-duration: 3s;
 }
-
-@keyframes animation-in {
-  from {margin-top: 1400px;}
-  to {margin-top: none;}
-} 
 
 
 #container li {
@@ -99,3 +94,9 @@ button:focus {
 footer a {
   color: black;
 }
+
+
+@keyframes animation-in {
+  from {margin-top: -1000px;}
+  to {margin-top: 0;}
+} 
