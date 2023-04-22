@@ -3,6 +3,7 @@
 * {
   font-family: "Rubik", sans-serif;
   transition: 0.2s linear;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,7 +14,8 @@ body {
 
 #container {
   padding: 10px;
-  width: 45vw;
+  min-width: 300px;
+  max-width: 40vw;
   background-color: aliceblue;
   list-style-type: none;
   margin: 50px 0 50px 0;
@@ -52,6 +54,92 @@ a:hover {
 
 #active:hover {
   background-color: rgb(11, 170, 11);
+}
+
+#event-container {
+  min-height: 30vh;
+  position: relative;
+  padding: 10px;
+  min-width: 30vw;
+  width: 300px;
+  background-color: aliceblue;
+  font-size: 50px;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  animation-name: animation-in;
+  animation-duration: 0.5s;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  margin: auto;
+}
+
+.button {
+  border-radius: 10px;
+  border: none;
+  height: 60px;
+  padding: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.button_equal_sign {
+    color: white;
+    background-color: #495c4c;  
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.button_equal_sign:hover {
+  background-color: #405042;  
+  font-size: 22px;
+}
+
+.operator {
+  font-size: 20px;
+  color:#fff;
+  background-color:#7f8b64;
+  border-radius: 10px;
+  border: none;
+  cursor:pointer
+}
+
+.operator:hover {
+  background-color:#565e43;
+  font-size: 22px;
+}
+
+.clear {
+  margin-top:5px;
+  margin-left:1vw;
+  min-width: 45px;
+  width: 6vw;
+  border:none;
+  background-color:#9cc097;
+  color:#fff;
+  height: 40px;
+  border-radius:5px;
+  cursor: pointer;
+}
+
+.clear:hover {
+  background-color:#b7e2b2;
+}
+
+.screen {
+  background-color: rgb(224, 228, 224);
+  cursor:default;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  min-width: 200px;
+  width: 20vw;
 }
 
 footer a {
