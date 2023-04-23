@@ -22,6 +22,8 @@ body {
   font-size: 30px;
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  animation-name: animation-in;
+  animation-duration: 1.5s;
 }
 
 #container li {
@@ -68,6 +70,15 @@ a:hover {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
   animation-name: animation-in;
   animation-duration: 0.5s;
+}
+
+@keyframes animation-in {
+  from {
+    margin-top: -1000px;
+  }
+  to {
+    margin-top: 0;
+  }
 }
 
 .keys {
