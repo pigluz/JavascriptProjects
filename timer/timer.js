@@ -1,4 +1,26 @@
-function setTimer() {
+function getCurrentTime() {
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const currentTime = new Date();
+
+  // Get's current time
+  let currentYear = currentTime.getFullYear();  
+  let currentMonth = months[currentTime.getMonth()];
+  let currentDay = currentTime.getDate();
+  let currentHour = currentTime.getHours();
+  let currentMinute = currentTime.getMinutes();
+  let currentSecound = currentTime.getSeconds();
+
+  // Updates inputs and select to the current values
+  document.getElementById("yearDate").value = currentYear;
+  document.getElementById("selectMonth").value = currentMonth;
+  document.getElementById("dayDate").value = currentDay;
+  document.getElementById("hourDate").value = currentHour;
+  document.getElementById("minuteDate").value = currentMinute;
+  document.getElementById("secondDate").value = currentSecound;
+}
+
+function setTimer()
+{
   // Get time's values from the user
   var yearU = document.getElementById("yearDate").value;
   var monthU = document.getElementById("selectMonth").value;
@@ -13,7 +35,8 @@ function setTimer() {
   ).getTime();
 
   // Start interval
-  var x = setInterval(function () {
+  var x = setInterval(function ()
+  {
     // Gets date from now
     var now = new Date().getTime();
 
@@ -44,7 +67,8 @@ function setTimer() {
     document.getElementById("timerTextSeconds").style.color = "grey";
 
     // If user enters a date that is already finished then..
-    if (distance < 0) {
+    if (distance < 0)
+    {
       clearInterval(x);
       document.getElementById("demo").innerHTML = "EXPIRED";
     }
