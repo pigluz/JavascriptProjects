@@ -34,7 +34,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
   animation-name: animation-in;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 #container li {
@@ -80,7 +80,7 @@ a:hover {
   border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
   animation-name: animation-in;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
 #event-container table {
@@ -135,9 +135,9 @@ footer a {
 
 @keyframes animation-in {
   from {
-    margin-top: -1000px;
+    margin-top: -100%
   }
   to {
-    margin-top: 0;
+    margin-top: none;
   }
 }
