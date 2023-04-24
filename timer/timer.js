@@ -1,3 +1,5 @@
+var x;
+
 function getCurrentTime() {
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const currentTime = new Date();
@@ -33,9 +35,12 @@ function setTimer()
   var countDownDate = new Date(
     `${monthU} ${dayU}, ${yearU} ${hourU}:${minuteU}:${secondU}`
   ).getTime();
+  
+  // Clear interval
+  clearInterval(x);
 
   // Start interval
-  var x = setInterval(function ()
+  x = setInterval(function ()
   {
     // Gets date from now
     var now = new Date().getTime();
