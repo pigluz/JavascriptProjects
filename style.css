@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: rgb(136, 208, 218);
   display: flex;
   justify-content: center;
